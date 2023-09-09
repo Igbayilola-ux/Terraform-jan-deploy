@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    encrypt = "-lock=false"
+    encrypt = false
     bucket = "my-jan-s3-bucket"
     key = "main"
     region = "us-east-2"
