@@ -1,8 +1,6 @@
 terraform {
   backend "s3" {
     encrypt = false
-    init:
-          extra_args: ["-lock=false"]
     plan:
           extra_args: ["-lock=false"]
     bucket = "my-jan-s3-bucket"
